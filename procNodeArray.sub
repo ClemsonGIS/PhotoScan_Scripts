@@ -1,0 +1,20 @@
+#!/bin/bash
+#PBS -N procNodeArray
+#PBS -l select=1:ncpus=16:ngpus=2:mem=120gb,walltime=72:00:00
+#PBS -j oe
+#PBS -J 1-8
+
+## procNodeArray.sub
+## Blake Lytle, Clemson Center for Geospatial Technologies, www.clemsongis.org
+## December 2017
+## This is an example job array script which will start 8 GPU nodes as PhotoScan processing nodes.
+## The hardware requirements above are very effective for large processing jobs (100's+ photos).
+## Refer to the Palmetto documentation for details on selecting hardware (www.palmetto.clemson.edu)
+
+
+## CHANGE TO YOUR DIRECTORY CONTAINING initProcNode.sh ##
+networkPath=~/scratch2/jmdowd/networkScripts
+
+# Initialize as a PhotoScan processing node.
+cd $networkPath
+./initProcNode.sh
