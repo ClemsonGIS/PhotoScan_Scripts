@@ -1,0 +1,10 @@
+#!/bin/bash
+#PBS -N interactive
+#PBS -l select=1:ncpus=8:mem=10gb,walltime=03:00:00
+#PBS -I -X
+
+## This simple job script will begin an interactive session for starting an Agisoft PhotoScan server node.
+## Make sure X11 tunnelling is up and running on your computer before submitting!
+## The hardware requirements for the server node are basic. Modify as desired. Refer to Palmetto documentation for details (www.palmetto.clemson.edu)
+
+
