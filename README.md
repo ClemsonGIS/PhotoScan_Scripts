@@ -1,2 +1,2 @@
 # PhotoScan_Scripts
-Python scripts to submit PBS jobs and process data on PhotoScan
+Python and Bash scripts to submit PBS jobs and process data on PhotoScan
